@@ -144,107 +144,110 @@ const CalculatorScreen = () => {
   };
 
   return (
-    <SafeAreaView style={styles.calcContainer}>
-      <View style={styles.outputContainer}>
-        <OutputWindow
-          display={formatNumber(output)}
-          fontSize={output.length > 8 ? 58 : 70}
-        />
-      </View>
+    <>
+      <StatusBar barStyle="light-content" />
+      <SafeAreaView style={styles.calcContainer}>
+        <View style={styles.outputContainer}>
+          <OutputWindow
+            display={formatNumber(output)}
+            fontSize={output.length > 8 ? 58 : 68}
+          />
+        </View>
 
-      <View styles={styles.keypad}>
-        <View style={styles.btnRow}>
-          <Button
-            onPress={handleButtonPress}
-            value="AC"
-            color="black"
-            backgroundColor="#a5a5a5"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="±"
-            color="black"
-            backgroundColor="#a5a5a5"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="%"
-            color="black"
-            backgroundColor="#a5a5a5"
-          />
-          <Button onPress={handleButtonPress} value="÷" />
-        </View>
-        <View style={styles.btnRow}>
-          <Button
-            onPress={handleButtonPress}
-            value="7"
-            backgroundColor="#333333"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="8"
-            backgroundColor="#333333"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="9"
-            backgroundColor="#333333"
-          />
-          <Button onPress={handleButtonPress} value="×" />
-        </View>
-        <View style={styles.btnRow}>
-          <Button
-            onPress={handleButtonPress}
-            value="4"
-            backgroundColor="#333333"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="5"
-            backgroundColor="#333333"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="6"
-            backgroundColor="#333333"
-          />
-          <Button onPress={handleButtonPress} value="-" />
-        </View>
-        <View style={styles.btnRow}>
-          <Button
-            onPress={handleButtonPress}
-            value="1"
-            backgroundColor="#333333"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="2"
-            backgroundColor="#333333"
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="3"
-            backgroundColor="#333333"
-          />
-          <Button onPress={handleButtonPress} value="+" />
-        </View>
-        <View style={styles.btnRow}>
-          <Button
-            onPress={handleButtonPress}
-            value="0"
-            backgroundColor="#333333"
-            style={{ flex: 2 }}
-          />
-          <Button
-            onPress={handleButtonPress}
-            value="."
-            backgroundColor="#333333"
-          />
+        <View styles={styles.keypad}>
+          <View style={styles.btnRow}>
+            <Button
+              onPress={handleButtonPress}
+              value="AC"
+              color="black"
+              backgroundColor="#a5a5a5"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="±"
+              color="black"
+              backgroundColor="#a5a5a5"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="%"
+              color="black"
+              backgroundColor="#a5a5a5"
+            />
+            <Button onPress={handleButtonPress} value="÷" />
+          </View>
+          <View style={styles.btnRow}>
+            <Button
+              onPress={handleButtonPress}
+              value="7"
+              backgroundColor="#333333"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="8"
+              backgroundColor="#333333"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="9"
+              backgroundColor="#333333"
+            />
+            <Button onPress={handleButtonPress} value="×" />
+          </View>
+          <View style={styles.btnRow}>
+            <Button
+              onPress={handleButtonPress}
+              value="4"
+              backgroundColor="#333333"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="5"
+              backgroundColor="#333333"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="6"
+              backgroundColor="#333333"
+            />
+            <Button onPress={handleButtonPress} value="-" />
+          </View>
+          <View style={styles.btnRow}>
+            <Button
+              onPress={handleButtonPress}
+              value="1"
+              backgroundColor="#333333"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="2"
+              backgroundColor="#333333"
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="3"
+              backgroundColor="#333333"
+            />
+            <Button onPress={handleButtonPress} value="+" />
+          </View>
+          <View style={styles.btnRow}>
+            <Button
+              onPress={handleButtonPress}
+              value="0"
+              backgroundColor="#333333"
+              style={{ flex: 2 }}
+            />
+            <Button
+              onPress={handleButtonPress}
+              value="."
+              backgroundColor="#333333"
+            />
 
-          <Button onPress={handleButtonPress} value="=" />
+            <Button onPress={handleButtonPress} value="=" />
+          </View>
         </View>
-      </View>
-    </SafeAreaView>
+      </SafeAreaView>
+    </>
   );
 };
 
