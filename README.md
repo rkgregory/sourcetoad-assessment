@@ -1,11 +1,7 @@
-# Sourcetoad Code Test for Front-end Developers
+# Thank you so much for this oppurtunity!
 
-### Test Instructions
-Create one Github repo for these problems. Complete the work in that repo so that the commit history can be seen.
+I really enjoyed working through this assessment, both problems were engaging and fun!
 
-Follow the instructions in each question folder.
+Problem two is built with expo, so just cd into calculator-app, run `npm i` and then `npm start` to give it a whirl.
 
-When complete, send a link to the repo so that it can be reviewed.
-
-#### Thank you for applying to Sourcetoad
-
+#### Ryan
